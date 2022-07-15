@@ -1,0 +1,106 @@
+Frame 1: 632 bytes on wire (5056 bits), 632 bytes captured (5056 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jul 14, 2022 14:05:10.157426000 KST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1657775110.157426000 seconds
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Frame Length: 632 bytes (5056 bits)
+    Capture Length: 632 bytes (5056 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:http]
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: NexG_55:51:88 (00:1f:14:55:51:88), Dst: fa:16:3e:04:d0:93 (fa:16:3e:04:d0:93)
+    Destination: fa:16:3e:04:d0:93 (fa:16:3e:04:d0:93)
+        Address: fa:16:3e:04:d0:93 (fa:16:3e:04:d0:93)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: NexG_55:51:88 (00:1f:14:55:51:88)
+        Address: NexG_55:51:88 (00:1f:14:55:51:88)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.203.241, Dst: 192.168.106.12
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 618
+    Identification: 0xdf7d (57213)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 125
+    Protocol: TCP (6)
+    Header Checksum: 0x64c1 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.203.241
+    Destination Address: 192.168.106.12
+Transmission Control Protocol, Src Port: 54649, Dst Port: 8080, Seq: 1, Ack: 1, Len: 578
+    Source Port: 54649
+    Destination Port: 8080
+    [Stream index: 0]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 578]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 3641278119
+    [Next Sequence Number: 579    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 707473557
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 510
+    [Calculated window size: 510]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0xb6a2 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.000000000 seconds]
+        [Time since previous frame in this TCP stream: 0.000000000 seconds]
+    [SEQ/ACK analysis]
+        [Bytes in flight: 578]
+        [Bytes sent since last PSH flag: 578]
+    TCP payload (578 bytes)
+Hypertext Transfer Protocol
+    GET / HTTP/1.1\r\n
+        [Expert Info (Chat/Sequence): GET / HTTP/1.1\r\n]
+            [GET / HTTP/1.1\r\n]
+            [Severity level: Chat]
+            [Group: Sequence]
+        Request Method: GET
+        Request URI: /
+        Request Version: HTTP/1.1
+    Host: 192.168.106.12:8080\r\n
+    Connection: keep-alive\r\n
+    Upgrade-Insecure-Requests: 1\r\n
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36\r\n
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n
+    Accept-Encoding: gzip, deflate\r\n
+    Accept-Language: ko,ko-KR;q=0.9,en-US;q=0.8,en;q=0.7\r\n
+    Cookie: tcore-session-id=9FDDF03AA637E7D0A828142CBA36ADC4; OAuth_Token_Request_State=f78868e0-faea-4653-aa1f-ff15d46a4bd0\r\n
+        Cookie pair: tcore-session-id=9FDDF03AA637E7D0A828142CBA36ADC4
+        Cookie pair: OAuth_Token_Request_State=f78868e0-faea-4653-aa1f-ff15d46a4bd0
+    \r\n
+    [Full request URI: http://192.168.106.12:8080/]
+    [HTTP request 1/2]
+    [Response in frame: 2]
+    [Next request in frame: 3]
